@@ -1,4 +1,4 @@
-# How to install Sass and CSS Modules into your Create React App
+# Add Sass and CSS Modules into your Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
@@ -67,12 +67,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 plugins: [
   new ExtractTextPlugin({ filename: 'styles.css', allChunks: true, disable: process.env.NODE_ENV !== 'production' }),
-]  
+]
 
 ```
 
-* In order for hot reloading you will need to disable the Extract Text Plugin in the dev environment. This can be accomplished by adding `disable: process.env.NODE_ENV !== 'production'` in the ExtractTextPlugin options.
-
+- In order for hot reloading you will need to disable the Extract Text Plugin in the dev environment. This can be accomplished by adding `disable: process.env.NODE_ENV !== 'production'` in the ExtractTextPlugin options.
 
 Create `postcss.config.js` file
 
